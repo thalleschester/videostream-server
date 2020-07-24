@@ -1,13 +1,15 @@
 package com.tchester.videostream.controllers.dto;
 
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 import java.util.UUID;
 
+@Getter
+@Builder
 @RequiredArgsConstructor
-public class PathDTO {
+public class DirectoryDTO {
 
-    private final UUID id;
+    private final Long id;
     private final String name;
     private final String path;
 
